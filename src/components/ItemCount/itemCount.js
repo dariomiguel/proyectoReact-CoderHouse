@@ -8,7 +8,7 @@ const ItemCount = ({stock, initial, onAdd})=>{
 
     return(
         <div className="columns is-mobile">
-            <div class="column is-half is-offset-one-quarter">
+            <div className="column is-half is-offset-one-quarter">
                 <div className="column">
                     <div className="buttons has-addons is-centered">
                         <button className="button" onClick={disminuir}>-</button>
