@@ -1,16 +1,19 @@
 import iconoCapyArt from "./iconoCapyart.png"
 import iconoCapyArtLetras from "./iconoCapyartLetras.png"
 import CartWidget from "../CartWidget/CartWidget"
+import { NavLink, Link } from "react-router-dom"
 
 const NavBar = () =>{
     return(
         <nav className="navbar is-warning">
             <div className="navbar-brand" >
-                    <figure className="image is-128x128">   
+                <Link to="/">
+                    <figure className="image is-128x128">
                         <a href="">
                             <img src={iconoCapyArt} alt="logo capyart"/>
                         </a>
                     </figure>
+                </Link>
                     <a href="">
                         <figure className="image is-128x128">
                             <img src={iconoCapyArtLetras} alt="logo capyart Letras"/>
@@ -25,21 +28,21 @@ const NavBar = () =>{
 
                 <div id="navbarExampleTransparentExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <a className="navbar-item subtitle" href="">
+                        <NavLink to={`/category/`} className="navbar-item subtitle">
                             Galería
-                        </a>
-                        <a className="navbar-item subtitle" href="">
+                        </NavLink>
+                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
                             Catalogos
-                        </a>
-                        <a className="navbar-item subtitle" href="">
+                        </NavLink>
+                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
                             Contacto
-                        </a>
-                        <a className="navbar-item subtitle" href="">
+                        </NavLink>
+                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
                             Sobre Nosotros
-                        </a>
-                        <a className="navbar-item subtitle" href="">
+                        </NavLink>
+                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
                             <CartWidget/>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
         </nav>
