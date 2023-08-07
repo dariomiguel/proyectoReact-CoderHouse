@@ -2,23 +2,20 @@ import iconoCapyArt from "./iconoCapyart.png"
 import iconoCapyArtLetras from "./iconoCapyartLetras.png"
 import CartWidget from "../CartWidget/CartWidget"
 import { NavLink, Link } from "react-router-dom"
+import "./NavBar.css"
 
 const NavBar = () =>{
     return(
-        <nav className="navbar is-warning">
+        <nav className="navbar">
             <div className="navbar-brand" >
                 <Link to="/">
                     <figure className="image is-128x128">
-                        <a href="">
                             <img src={iconoCapyArt} alt="logo capyart"/>
-                        </a>
                     </figure>
                 </Link>
-                    <a href="">
                         <figure className="image is-128x128">
                             <img src={iconoCapyArtLetras} alt="logo capyart Letras"/>
                         </figure>
-                    </a>
                     <div className="navbar-burger" datatarget="navbarExampleTransparentExample">
                         <span></span>
                         <span></span>
@@ -28,19 +25,19 @@ const NavBar = () =>{
 
                 <div id="navbarExampleTransparentExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <NavLink to={`/category/`} className="navbar-item subtitle">
-                            Galería
+                        <NavLink to={`/category/Cuadros`} className="navbar-item subtitle">
+                            Cuadros
                         </NavLink>
-                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
-                            Catalogos
+                        <NavLink to={`/category/Artesanias`} className="navbar-item subtitle">
+                            Artesanías
                         </NavLink>
-                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
-                            Contacto
+                        <NavLink to={`/category/Bordados`} className="navbar-item subtitle">
+                            Bordados
                         </NavLink>
-                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
-                            Sobre Nosotros
+                        <NavLink to={`/category/Esculturas`} className="navbar-item subtitle">
+                            Esculturas
                         </NavLink>
-                        <NavLink to={`/category/`} className="navbar-item subtitle" href="">
+                        <NavLink to={`/`} className="navbar-item subtitle" href="">
                             <CartWidget/>
                         </NavLink>
                     </div>
