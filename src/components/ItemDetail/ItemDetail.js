@@ -2,30 +2,36 @@ import ItemCount from "../ItemCount/itemCount";
 
 const ItemDetail = ({id, nombreProducto, img, categoria, descripcion, precio, stock}) => {
     return(
-        <article className="CardItem">
-            <header className="Header">
-                <h2 className="ItemHeader">
-                    {nombreProducto}
-                </h2>
-            </header>
-            <picture>
-                <img src={img} alt={nombreProducto} className="ItemImg"/>
-            </picture>
-            <section>
-                <p className="Info">
-                    Categoría: {categoria}
-                </p>
-                <p className="Info">
-                    Descripción: {descripcion}
-                </p>
-                <p className="Info">
-                    Precio: ${precio}
-                </p>
-            </section>
-            <footer className="ItemFooter">
-                <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada ", quantity)}/>
-            </footer>
-        </article>
+        <div className="container has-text-centered">
+            <div className="column is-half">
+                <article className="card">
+                    <div className="card-content">
+                        <header>
+                            <h2 className="title is-2">
+                                {nombreProducto}
+                            </h2>
+                        </header>
+                        <picture>
+                            <img src={img} alt={nombreProducto}/>
+                        </picture>
+                        <section>
+                            <p className="subtitle">
+                                Categoría: {categoria}
+                            </p>
+                            <p className="subtitle">
+                                Descripción: {descripcion}
+                            </p>
+                            <p className="subtitle">
+                                Precio: ${precio}
+                            </p>
+                        </section>
+                    </div>
+                    <footer className="ItemFooter">
+                        <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada ", quantity)}/>
+                    </footer>
+                </article>
+            </div>
+        </div>
     )
 }
 

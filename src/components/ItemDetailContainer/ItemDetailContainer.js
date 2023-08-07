@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
     },[itemId])
 
     return(
-        <div className="">
+        <div className="is-half">
             <ItemDetail {...productos} />
         </div>
     )
