@@ -22,9 +22,9 @@ const ItemListContainer = ({ greeting }) => {
     },[categoryId])
     
     return (
-        <div>
+        <section className="section">
             <ItemList productos={productos}/>
-        </div>
+        </section>
     )
 }
 

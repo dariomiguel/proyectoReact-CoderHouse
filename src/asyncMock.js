@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: "2",
-        nombreProducto: "Logo Twenty One pilot",
+        nombreProducto: "Twenty One pilot",
         precio: 3000,
         categoria: "Cuadros",
         img: "https://i.imgur.com/NarLLFH.jpg",
@@ -46,7 +46,7 @@ const productos = [
     },
     {
         id: "6",
-        nombreProducto: "Cuadro de Disco Twenty One Pilot, Scaled and Icy",
+        nombreProducto: "Scaled and Icy",
         precio: 3000,
         categoria: "Cuadros",
         img: "https://i.imgur.com/GSxWdK5.jpg",
@@ -55,7 +55,7 @@ const productos = [
     },
     {
         id: "7",
-        nombreProducto: "Simbolo Harry Potter",
+        nombreProducto: "Harry Potter",
         precio: 1500,
         categoria: "Cuadros",
         img: "https://i.imgur.com/7VohhlS.jpg",
