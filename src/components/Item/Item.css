@@ -1,5 +1,7 @@
-/* .card{
+.card{
     background-color: #d6e9f0;
-    border: 2px solid #b37a34;
-    border-radius: 15px;
-} */
+    border: 1px solid #b37a34;
+}
+.columns:not(.is-desktop) {
+    flex-wrap: wrap;
+}

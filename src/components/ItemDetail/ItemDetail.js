@@ -3,17 +3,17 @@ import ItemCount from "../ItemCount/itemCount";
 const ItemDetail = ({id, nombreProducto, img, categoria, descripcion, precio, stock}) => {
     return(
         <div className="container has-text-centered">
-            <div className="column is-half">
+            <div className="column">
                 <article className="card">
+                        <picture>
+                            <img src={img} alt={nombreProducto}/>
+                        </picture>
                     <div className="card-content">
                         <header>
                             <h2 className="title is-2">
                                 {nombreProducto}
                             </h2>
                         </header>
-                        <picture>
-                            <img src={img} alt={nombreProducto}/>
-                        </picture>
                         <section>
                             <p className="subtitle">
                                 Categoría: {categoria}

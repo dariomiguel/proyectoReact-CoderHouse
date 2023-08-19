@@ -6,7 +6,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/zQstU3L.jpg",
         stock: 5,
-        descripcion: "Cuadro pintado en madera a base de acrilico, Fondo blanco letras negras"
+        descripcion: "Cuadro pintado en madera a base de acrílico, Fondo blanco letras negras"
     },
     {
         id: "2",
@@ -15,7 +15,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/NarLLFH.jpg",
         stock: 5,
-        descripcion: "Cuadro pintado en madera a base de acrilico, Fondo negro con logo de la banda Twenty One Pilot"
+        descripcion: "Cuadro pintado en madera a base de acrílico, Fondo negro con logo de la banda Twenty One Pilot"
     },
     {
         id: "3",
@@ -24,7 +24,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/oUiJomK.jpg",
         stock: 25,
-        descripcion: "Cuadro pintado en fibrofacil a base de acrilico, Fondo blanco con figura de tucán"
+        descripcion: "Cuadro pintado en fibrofacil a base de acrílico, Fondo blanco con figura de tucán"
     },
     {
         id: "4",
@@ -33,7 +33,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/lk5JD8T.jpg",
         stock: 15,
-        descripcion: "Cuadro pintado en madera a base de acrilico, con figura de Hulk"
+        descripcion: "Cuadro pintado en madera a base de acrílico, con figura de Hulk"
     },
     {
         id: "5",
@@ -42,7 +42,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/EPJjre0.jpg",
         stock: 10,
-        descripcion: "Cuadro pintado en papel 240gr de 10x15 cm a base de acrilico con personaje 2-D de la banda Gorillaz"
+        descripcion: "Cuadro pintado en papel 240gr de 10x15 cm a base de acrílico con personaje 2-D de la banda Gorillaz"
     },
     {
         id: "6",
@@ -51,7 +51,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/GSxWdK5.jpg",
         stock: 7,
-        descripcion: "Cuadro pintado en madera a base de acrilico, figura de disco Scaled and Icy"
+        descripcion: "Cuadro pintado en madera a base de acrílico, figura de disco Scaled and Icy"
     },
     {
         id: "7",
@@ -60,7 +60,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/7VohhlS.jpg",
         stock: 28,
-        descripcion: "Cuadro de logo harry potter pintado en acrilico"
+        descripcion: "Cuadro de logo Harry Potter pintado en acrílico"
     },
     {
         id: "8",
@@ -69,7 +69,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/fi2QR2M.jpg",
         stock: 50,
-        descripcion: "Cuadro pintado a base de acrilico sobre limones"
+        descripcion: "Cuadro pintado a base de acrílico sobre limones"
     },
     {
         id: "9",
@@ -78,16 +78,16 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/EA7GIom.jpg",
         stock: 1,
-        descripcion: "Cuadro sobre lienzo, de mujer a base de acrilico"
+        descripcion: "Cuadro sobre lienzo, de mujer a base de acrílico"
     },
     {
         id: "10",
-        nombreProducto: "Mujeres en el Abismo",
+        nombreProducto: "En el Abismo",
         precio: 100000,
         categoria: "Cuadros",
         img: "https://i.imgur.com/9jSM2HQ.jpg",
         stock: 1,
-        descripcion: "Cuadro sobre lienzo, de mujer en fondo negro a base de acrilico"
+        descripcion: "Cuadro sobre lienzo, de mujer en fondo negro a base de acrílico"
     },
     {
         id: "11",
@@ -96,7 +96,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/Yph0FJ8.jpg",
         stock: 4,
-        descripcion: "Cuadro sobre lienzo, de mujer en fondo rojo y azul a base de acrilico"
+        descripcion: "Cuadro sobre lienzo, de mujer en fondo rojo y azul a base de acrílico"
     },
     {
         id: "12",
@@ -114,7 +114,7 @@ const productos = [
         categoria: "Cuadros",
         img: "https://i.imgur.com/P6g89IC.jpg",
         stock: 1,
-        descripcion: "Cuadro pintado en lienzo a base de acrilico sobre dos gatos durmiendo"
+        descripcion: "Cuadro pintado en lienzo a base de acrílico sobre dos gatos durmiendo"
     },
     {
         id: "14",
@@ -123,7 +123,7 @@ const productos = [
         categoria: "Artesanias",
         img: "https://i.imgur.com/2vYFfb8.jpg",
         stock: 5,
-        descripcion: "Maceta cuadrada artesanal de yeso pintada en acrilico"
+        descripcion: "Maceta cuadrada artesanal de yeso pintada en acrílico"
     },
     {
         id: "15",
@@ -132,7 +132,7 @@ const productos = [
         categoria: "Artesanias",
         img: "https://i.imgur.com/9lmNLXZ.jpg",
         stock: 25,
-        descripcion: "Maceta redonda artesanal de yeso pintada en acrilico"
+        descripcion: "Maceta redonda artesanal de yeso pintada en acrílico"
     },
     {
         id: "16",
