@@ -9,28 +9,29 @@ export const CartProvider = ({ children }) => {
 
     console.log(carrito)
 
-    const agregarItem = (item, quantity) => {
-        if(!isInCarrito(item.id)){
-            setCarrito(prev => [...prev, {...item, quantity}]);
+    const agregarItem = (item, cantidad) => {
+        if(!hayEnCarrito(item.id)){
+            setCarrito(prev => [...prev, {...item, cantidad}])
         }else{
             console.error("El producto ya fue agregado");
         }
     }
 
-    const removeItem = (itemId) => {
+    const removerItem = (itemId) => {
         const carritoUpdated = carrito.filter(prod => prod.id !== itemId)
         setCarrito(carritoUpdated)
     }
-    const clearCarrito = () => {
+
+    const limpiarCarrito = () => {
         setCarrito([])
     }
 
-    const isInCarrito = (itemId) => {
+    const hayEnCarrito = (itemId) => {
         return carrito.some(prod => prod.id === itemId)
     }
 
     return (
-        <CartContext.Provider value={{ carrito, agregarItem, removeItem, clearCarrito}}>
+        <CartContext.Provider value={{ carrito, agregarItem, removerItem, limpiarCarrito}}>
             {children}
         </CartContext.Provider>
     )
