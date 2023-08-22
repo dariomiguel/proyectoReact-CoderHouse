@@ -25,19 +25,19 @@ const NavBar = () =>{
 
                 <div id="navbarExampleTransparentExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <NavLink to={`/category/Cuadros`} className="navbar-item subtitle">
+                        <NavLink to={"/category/Cuadros"} className="navbar-item subtitle">
                             Cuadros
                         </NavLink>
-                        <NavLink to={`/category/Artesanias`} className="navbar-item subtitle">
+                        <NavLink to={"/category/Artesanias"} className="navbar-item subtitle">
                             Artesanías
                         </NavLink>
-                        <NavLink to={`/category/Bordados`} className="navbar-item subtitle">
+                        <NavLink to={"/category/Bordados"} className="navbar-item subtitle">
                             Bordados
                         </NavLink>
-                        <NavLink to={`/category/Esculturas`} className="navbar-item subtitle">
+                        <NavLink to={"/category/Esculturas"} className="navbar-item subtitle">
                             Esculturas
                         </NavLink>
-                        <NavLink to={`/`} className="navbar-item subtitle" href="">
+                        <NavLink to={"/"} className="navbar-item subtitle">
                             <CartWidget/>
                         </NavLink>
                     </div>
