@@ -29,10 +29,7 @@ const CartItem = ({ id, nombreProducto, cantidad, precio, img }) => {
                     <p className="subtitle is-6">Subtotal: ${subtotal}</p>
                 </div>
                 <div className="column">
-                    <button
-                        className="button is-danger is-small"
-                        onClick={handleRemoverItem}
-                    >
+                    <button className="button is-danger is-small" onClick={handleRemoverItem}>
                         Remover
                     </button>
                 </div>

@@ -7,7 +7,6 @@ import { useParams } from "react-router-dom";
 const ItemDetailContainer = () => {
     const [productos, setProductos] = useState(null);
     const [loading, setLoading] = useState(true);
-
     const { itemId } = useParams();
 
     useEffect(() => {
@@ -31,11 +30,11 @@ const ItemDetailContainer = () => {
 
     return (
         <div className="is-half">
-        {loading ? (
-            <p>Cargando...</p>
-        ) : (
-            <ItemDetail {...productos} />
-        )}
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                <ItemDetail {...productos} />
+            )}
         </div>
     );
 };

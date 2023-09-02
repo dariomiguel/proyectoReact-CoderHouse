@@ -10,45 +10,38 @@ const ItemDetail = ({ id, nombreProducto, img, categoria, descripcion, precio, s
 
     const handleOnAdd = (cantidad) => {
         setCantidadAgregada(cantidad);
-
-        const item = {
-        id,
-        nombreProducto,
-        precio,
-        img,
-        };
-
+        const item = {id, nombreProducto, precio, img,};
         agregarItem(item, cantidad);
     };
 
     return (
         <div className="container has-text-centered">
-        <div className="column">
-            <article className="card">
-            <picture>
-                <img src={img} alt={nombreProducto} />
-            </picture>
-            <div className="card-content">
-                <header>
-                <h2 className="title is-2">{nombreProducto}</h2>
-                </header>
-                <section>
-                <p className="subtitle">Categoría: {categoria}</p>
-                <p className="subtitle">Descripción: {descripcion}</p>
-                <p className="subtitle">Precio: ${precio}</p>
-                </section>
+            <div className="column">
+                <article className="card">
+                    <picture>
+                        <img src={img} alt={nombreProducto} />
+                    </picture>
+                    <div className="card-content">
+                        <header>
+                            <h2 className="title is-2">{nombreProducto}</h2>
+                        </header>
+                        <section>
+                            <p className="subtitle">Categoría: {categoria}</p>
+                            <p className="subtitle">Descripción: {descripcion}</p>
+                            <p className="subtitle">Precio: ${precio}</p>
+                        </section>
+                    </div>
+                    <footer>
+                        {cantidadAgregada > 0 ? (
+                        <Link to="/cart" className="button is-primary">
+                            Terminar Compra
+                        </Link>
+                        ) : (
+                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                        )}
+                    </footer>
+                </article>
             </div>
-            <footer>
-                {cantidadAgregada > 0 ? (
-                <Link to="/cart" className="button is-primary">
-                    Terminar Compra
-                </Link>
-                ) : (
-                <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
-                )}
-            </footer>
-            </article>
-        </div>
         </div>
     );
 };

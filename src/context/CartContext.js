@@ -8,10 +8,7 @@ export const CartContext = createContext({
 })
 
 export const CartProvider = ({ children }) => {
-    const [carrito, setCarrito] = useState([])
-
-    console.log("Este es el carrito actual")
-    console.log(carrito)
+    const [carrito, setCarrito] = useState([]);
 
     const agregarItem = (item, cantidad) => {
         const subtotal = item.precio * cantidad;

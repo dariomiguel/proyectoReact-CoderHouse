@@ -16,13 +16,10 @@ const ItemList = ({ productos }) => {
 
     return (
         <div className="container">
-        {/* Título */}
-        <h2 className="title has-text-centered is-size-3">{titulo}</h2>
-        <div className="columns mt-5 is-8 is-variable">
-            {productos.map((prod) => (
-            <Item key={prod.id} {...prod} />
-            ))}
-        </div>
+            <h2 className="title has-text-centered is-size-3">{titulo}</h2>
+            <div className="columns mt-5 is-8 is-variable">
+                {productos.map((prod) => (<Item key={prod.id} {...prod} />))}
+            </div>
         </div>
     );
 };

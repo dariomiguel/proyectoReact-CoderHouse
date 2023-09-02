@@ -7,7 +7,7 @@ import { CartContext } from "../../context/CartContext";
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
-    const [orderId, setOrderId] = useState('');
+    const [orderId, setOrderId] = useState("");
 
     const { carrito, cantidadTotal, limpiarCarrito } = useContext(CartContext);
 
@@ -15,15 +15,12 @@ const Checkout = () => {
         setLoading(true);
 
         if (!carrito || carrito.length === 0) {
-            console.error("El carrito está vacío.");
             return;
         }
         
         try {
             const objOrder = {
-                buyer: {
-                    name, phone, email
-                },
+                buyer: {name, phone, email},
                 items: carrito,
                 cantidadTotal: cantidadTotal,
                 date: Timestamp.fromDate(new Date())

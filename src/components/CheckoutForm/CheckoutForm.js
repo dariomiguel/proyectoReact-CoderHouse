@@ -7,13 +7,8 @@ const CheckoutForm = ({ onConfirm }) => {
 
   const handleConfirm = (event) => {
     event.preventDefault();
-    const userData = {
-      name,
-      phone,
-      email,
-    };
+    const userData = {name, phone, email,};
 
-    // Llama a la función onConfirm con los datos del usuario
     onConfirm(userData);
   };
 
@@ -23,39 +18,21 @@ const CheckoutForm = ({ onConfirm }) => {
         <div className="field">
           <label className="label">Nombre:</label>
           <div className="control">
-            <input
-              className="input"
-              type="text"
-              value={name}
-              onChange={({ target }) => setName(target.value)}
-              required
-            />
+            <input className="input" type="text" value={name} onChange={({ target }) => setName(target.value)} required/>
           </div>
         </div>
 
         <div className="field">
           <label className="label">Teléfono:</label>
           <div className="control">
-            <input
-              className="input"
-              type="text"
-              value={phone}
-              onChange={({ target }) => setPhone(target.value)}
-              required
-            />
+            <input className="input" type="text" value={phone} onChange={({ target }) => setPhone(target.value)} required/>
           </div>
         </div>
 
         <div className="field">
           <label className="label">Email:</label>
           <div className="control">
-            <input
-              className="input"
-              type="email"
-              value={email}
-              onChange={({ target }) => setEmail(target.value)}
-              required
-            />
+            <input className="input" type="email" value={email} onChange={({ target }) => setEmail(target.value)} required/>
           </div>
         </div>
 

@@ -19,33 +19,28 @@ const Cart = () => {
 
     return (
         <div className="container mt-6">
-        <h1 className="title is-3 mb-4">Carrito de Compras</h1>
-        <div className="columns is-variable is-4 is-multiline">
-            {carrito.map((p) => (
-            <CartItem key={p.id} {...p} />
-            ))}
-        </div>
-        <div className="columns is-vcentered">
-            <div className="column is-6">
-            <h3 className="title is-4">Total: ${total}</h3>
+            <h1 className="title is-3 mb-4">Carrito de Compras</h1>
+            <div className="columns is-variable is-4 is-multiline">
+                {carrito.map((p) => (<CartItem key={p.id} {...p} />))}
             </div>
-            <div className="column is-6 has-text-right">
-            <div className="buttons">
-                <Link to="/checkout" className="button is-primary">
-                Ir al Checkout
-                </Link>
-                <Link to="/" className="button is-link is-light">
-                Seguir Comprando
-                </Link>
-                <button
-                onClick={() => limpiarCarrito()}
-                className="button is-danger is-light"
-                >
-                Limpiar Carrito
-                </button>
+            <div className="columns is-vcentered">
+                <div className="column is-6">
+                    <h3 className="title is-4">Total: ${total}</h3>
+                </div>
+                <div className="column is-6 has-text-right">
+                    <div className="buttons">
+                        <Link to="/checkout" className="button is-primary">
+                        Ir al Checkout
+                        </Link>
+                        <Link to="/" className="button is-link is-light">
+                        Seguir Comprando
+                        </Link>
+                        <button onClick={() => limpiarCarrito()} className="button is-danger is-light">
+                        Limpiar Carrito
+                        </button>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     );
 };
