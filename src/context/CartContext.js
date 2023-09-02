@@ -1,4 +1,5 @@
 import { createContext, useState, useMemo } from "react";
+import Swal from "sweetalert2";
 
 export const CartContext = createContext({
     carrito: [],
@@ -14,12 +15,30 @@ export const CartProvider = ({ children }) => {
 
     const agregarItem = (item, cantidad) => {
         const subtotal = item.precio * cantidad;
-        if(!hayEnCarrito(item.id)){
-            setCarrito(prev => [...prev, {...item, cantidad, subtotal}])
-        }else{
-            console.error("El producto ya fue agregado");
+
+        const productoEnCarrito = carrito.find((prod) => prod.id === item.id);
+
+        if (productoEnCarrito) {
+            const carritoActualizado = carrito.map((prod) =>
+                prod.id === item.id ? { ...prod, cantidad, subtotal } : prod
+            );
+            setCarrito(carritoActualizado);
+            Swal.fire({
+                icon: "warning",
+                title: "Advertencia",
+                text: "Usted ya seleccionó este producto, la cantidad se sobrescribirá",
+            });
+        } else {
+            setCarrito((prev) => [...prev, { ...item, cantidad, subtotal }]);
+            Swal.fire({
+                icon: 'success',
+                title: 'Producto agregado al carrito!',
+                showConfirmButton: false,
+                timer: 1500, 
+            });
         }
-    }
+    };
+
 
     const removerItem = (itemId) => {
         const carritoUpdated = carrito.filter(prod => prod.id !== itemId)
@@ -28,10 +47,6 @@ export const CartProvider = ({ children }) => {
 
     const limpiarCarrito = () => {
         setCarrito([])
-    }
-
-    const hayEnCarrito = (itemId) => {
-        return carrito.some(prod => prod.id === itemId)
     }
 
     // Calcular el total cuando el carrito cambie de valor 
