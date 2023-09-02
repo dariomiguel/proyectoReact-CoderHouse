@@ -1,7 +1,9 @@
 import { createContext, useState, useMemo } from "react";
 
 export const CartContext = createContext({
-    carrito: []
+    carrito: [],
+    total: 0,
+    agregarItem: () => {},
 })
 
 export const CartProvider = ({ children }) => {

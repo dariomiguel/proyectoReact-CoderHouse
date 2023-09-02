@@ -10,8 +10,6 @@ const CartItem = ({ id, nombreProducto, cantidad, precio, img }) => {
         removerItem(id);
     };
 
-    console.log("Ruta de la imagen:", img); // Agregar este console.log
-
     return (
         <div className="box">
             <div className="columns is-vcentered">
