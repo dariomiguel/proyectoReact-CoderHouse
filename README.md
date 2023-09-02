@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# proyectoDarioMiguel - Documentación del Proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+El proyecto proyectoDarioMiguel es una aplicación web de comercio electrónico que permite a los usuarios explorar y comprar una variedad de productos en línea. Esta documentación proporciona información sobre cómo funciona la aplicación y cómo colaborar en su desarrollo.
 
-In the project directory, you can run:
+## Funcionalidades Principales
 
-### `npm start`
+- **Catálogo de Productos:** Los usuarios pueden explorar una amplia gama de productos organizados en categorías.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Detalle de Producto:** Al hacer clic en un producto, los usuarios pueden ver detalles completos, incluyendo imágenes, descripción y precio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Carrito de Compras:** Los usuarios pueden agregar productos a su carrito de compras, ajustar las cantidades y ver el resumen de su compra.
 
-### `npm test`
+- **Proceso de Compra:** Los usuarios pueden proceder al proceso de compra, proporcionando detalles de envío y completando el pago de manera segura.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Confirmación de Pedido:** Después de completar la compra, los usuarios reciben un ID de confirmación y tienen la opción de limpiar su carrito.
 
-### `npm run build`
+## Tecnologías Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El proyecto E-commerce XYZ utiliza las siguientes tecnologías:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/): Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Firebase](https://firebase.google.com/): Plataforma de desarrollo de aplicaciones móviles y web que proporciona autenticación de usuarios y una base de datos en tiempo real.
 
-### `npm run eject`
+- [Bulma](https://bulma.io/): Framework de CSS basado en Flexbox para un diseño web moderno y receptivo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [SweetAlert2](https://sweetalert2.github.io/): Biblioteca para mostrar alertas y modales atractivos en la aplicación.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuración del Proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clona este repositorio en tu máquina local.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://github.com/dariomiguel/proyectoReact-CoderHouse
 
-## Learn More
+2. Instala las dependencias del proyecto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Configura Firebase:
+- Crea un proyecto en [Firebase](https://firebase.google.com/).
+- Configura las credenciales de Firebase en el archivo `firebaseConfig.js`.
+- Habilita la autenticación de correo electrónico y configura una base de datos Firestore.
 
-### Code Splitting
+4. Inicia la aplicación en modo de desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start
 
-### Analyzing the Bundle Size
+## Problemas y Soporte
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Si encuentras problemas o tienes preguntas sobre el proyecto, crea un [issue](https://github.com/dariomiguel/proyectoReact-CoderHouse/issues) en GitHub para obtener ayuda.
 
-### Making a Progressive Web App
+Esperamos que disfrutes trabajando en este proyecto y que te sientas libre de contribuir y personalizarlo según tus necesidades. ¡Gracias por tu colaboración!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
