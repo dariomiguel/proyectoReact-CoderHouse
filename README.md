@@ -18,7 +18,7 @@ El proyecto proyectoDarioMiguel es una aplicación web de comercio electrónico 
 
 ## Tecnologías Utilizadas
 
-El proyecto E-commerce XYZ utiliza las siguientes tecnologías:
+El proyecto utiliza las siguientes tecnologías:
 
 - [React](https://reactjs.org/): Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas.
 
