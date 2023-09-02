@@ -21,16 +21,16 @@ const NavBar = () => {
 
             <div id="navbarExampleTransparentExample" className="navbar-menu ">
                 <div className="navbar-start">
-                    <NavLink to={"/category/Cuadros"} className="navbar-item has-text-info">
+                    <NavLink to={"/categoria/Cuadros"} className="navbar-item has-text-info">
                         Cuadros
                     </NavLink>
-                    <NavLink to={"/category/Artesanias"} className="navbar-item has-text-info">
+                    <NavLink to={"/categoria/Artesanias"} className="navbar-item has-text-info">
                         Artesanías
                     </NavLink>
-                    <NavLink to={"/category/Bordados"} className="navbar-item has-text-info">
+                    <NavLink to={"/categoria/Bordados"} className="navbar-item has-text-info">
                         Bordados
                     </NavLink>
-                    <NavLink to={"/category/Esculturas"} className="navbar-item has-text-info">
+                    <NavLink to={"/categoria/Esculturas"} className="navbar-item has-text-info">
                         Esculturas
                     </NavLink>
                 </div>
